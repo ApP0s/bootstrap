@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <title>FirstPage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
   <style>
     .jumbotron {
+      height: 500px;
       position: relative;
       color: white;
       background: url('bgimage.jpg') no-repeat center center;
       background-size: cover;
     }
+
+    .anton-sc-regular {
+      font-family: "Anton SC", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
     .jumbotron .content {
+      
       position: relative;
       z-index: 1;
     }
+
+    .navbar-custom {
+      background-color: black;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link,
+    .navbar-custom .navbar-toggler-icon {
+      color: white;
+    }
   </style>
 </head>
-<body style="background-image: linear-gradient(red, yellow);">
+
+<body class="anton-sc-regular">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">Dannie!@#</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <a class="navbar-brand" href="#">Dannie</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -62,22 +88,26 @@
       <p>Ready to become one of us!</p>
     </div>
   </div>
-  
+
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
         <h3>We Code</h3>
-        <p>Lorem ipsum dolor..</p>
+        <p>Make ur self pain and suffer for stronger</p>
+        <img src="code.png" class="img-fluid" alt="code">
       </div>
       <div class="col-sm-4">
         <h3>We Eat</h3>
-        <p>Lorem ipsum dolor..</p>
+        <p>just make sure you fast and fat for making your code better</p>
+        <img src="snack.jpg" class="img-fluid" alt="snack">
       </div>
       <div class="col-sm-4">
         <h3>We Play</h3>
-        <p>Lorem ipsum dolor..</p>
+        <p>Don't forget you free time, play roblox for your good sage</p>
+        <img src="roblox.webp" class="img-fluid" alt="roblox">
       </div>
     </div>
   </div>
 </body>
+
 </html>
